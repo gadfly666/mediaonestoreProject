@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.mediaonestore.staff.AddStaffController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="102.0" layoutY="35.0" prefHeight="375.0" prefWidth="316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="_name" prefHeight="11111.0" prefWidth="1111.0" promptText="Name">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <DatePicker fx:id="_birthDay" prefHeight="11111.0" prefWidth="1111.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </DatePicker>
+            <TextField fx:id="_idNumber" layoutX="10.0" layoutY="35.0" prefHeight="11111.0" prefWidth="1111.0" promptText="ID number">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="_phoneNumber" layoutX="10.0" layoutY="60.0" prefHeight="11111.0" prefWidth="1111.0" promptText="Phone number">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="_salary" layoutX="10.0" layoutY="140.0" prefHeight="11111.0" prefWidth="1111.0" promptText="Salary">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="_username" layoutX="10.0" layoutY="85.0" prefHeight="11111.0" prefWidth="1111.0" promptText="Username">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="_password" prefHeight="11111.0" prefWidth="11111.0" promptText="Password">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <CheckBox fx:id="_isAdmin" mnemonicParsing="false" prefHeight="31.0" prefWidth="316.0" text="Admin">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox alignment="CENTER" prefHeight="11111.0" prefWidth="1111.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="11111.0" prefWidth="1111.0" text="Save" />
+                  <Button mnemonicParsing="false" prefHeight="11111.0" prefWidth="1111.0" text="Cancel" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

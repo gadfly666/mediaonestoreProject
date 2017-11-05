@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.mediaonestore.staff.ViewStaffController">
+   <children>
+      <VBox layoutX="188.0" layoutY="67.0" prefHeight="348.0" prefWidth="475.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" prefHeight="325.0" prefWidth="475.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="birthDay" prefWidth="75.0" text="Birthday" />
+                  <TableColumn fx:id="idNumber" prefWidth="75.0" text="ID number" />
+                  <TableColumn fx:id="phoneNumber" prefWidth="75.0" text="Phone number" />
+                  <TableColumn fx:id="salary" prefWidth="75.0" text="Salary" />
+                  <TableColumn fx:id="isAdmin" prefWidth="75.0" text="Admin" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="475.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleEditButton" text="Edit">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="433.0" layoutY="26.0" mnemonicParsing="false" onAction="#handlerSaveButton" text="Save">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

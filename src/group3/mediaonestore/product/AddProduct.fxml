@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.mediaonestore.product.AddProduct">
+   <children>
+      <VBox layoutX="214.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TextField fx:id="nameField" prefHeight="50.0" promptText="Name">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="priceField" layoutX="10.0" layoutY="10.0" prefHeight="50.0" promptText="Price">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="quantityField" layoutX="10.0" layoutY="35.0" prefHeight="50.0" promptText="Quantity">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="categoryBox" prefHeight="25.0" prefWidth="219.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextArea fx:id="descriptionArea" prefHeight="200.0" prefWidth="200.0" promptText="Description">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <HBox prefHeight="57.0" prefWidth="366.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="1.1111111E7" prefWidth="1111111.0" text="Save" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="1.1111111E7" prefWidth="1111111.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
